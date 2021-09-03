@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Air Temperature Detection </title>
+</head>
+<body>
+    <h1 style="text-align: center;">To Detect the Car Air Temperature</h1>
+
+    <form action="/visual">
+        <input type="submit" value="Visualization">
+    </form>
+    <br><br>
+    <form action="/github">
+        <input type="submit" value="Github">
+    </form>
+
+
+
+    <h2>Please Fill The Car Detials</h2>
+    
+    <form action="/predict" method="POST">
+       <p> Process Temperature : </p>
+       <input type="text" name="pt">
+       <p> RPM : </p>
+       <input type="text" name="rpm">
+       <p> Torque : </p>
+       <input type="text" name="tor">
+       <p> Tool Wear : </p>
+       <input type="text" name="tw">
+       <p> TWF : </p>
+       <input type='number' name="twf">
+       <p> HDF : </p>
+       <input type='number' name="hdf">
+       
+       <p> PWF : </p>
+       <input type='number' name="pwf">
+       <p> OSF : </p>
+       <input type='number' name="osf">
+       <p> RNF : </p>
+       <input type='number' name="rnf">
+
+       <br> <br>
+
+       <input type="submit" value="Predict">
+
+    </form>
+
+    <h2 style="text-align: center;">{{chance}}</h2>
+    
+</body>
+</html>
