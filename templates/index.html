@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Air Temperature Detection </title>
+</head>
+<body>
+    <h1 style="text-align: center;">To Detect the Car Air Temperature</h1>
+
+    <form action="/visual">
+        <input type="submit" value="Visualization">
+    </form>
+    <br><br>
+    <form action="/github">
+        <input type="submit" value="Github">
+    </form>
+
+
+
+    <h2>Please Fill The Car Detials</h2>
+    
+    <form action="/predict" method="POST">
+       <p> Process Temperature : </p>
+       <input type="text" name="pt">
+       <p> RPM : </p>
+       <input type="text" name="rpm">
+       <p> Torque : </p>
+       <input type="text" name="tor">
+       <p> Tool Wear : </p>
+       <input type="text" name="tw">
+       <p> TWF : </p>
+          <select name='twf'>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+          </select>
+       <p>HWF :</p>
+            <select name='hwf'>
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+       <p> PWF :</p>
+         <select name='pwf'>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+         </select>
+       <p>OSF :</p>
+         <select name='osf'>
+           <option value="1">Yes</option>
+           <option value="0">No</option>
+         </select>
+
+       <p>RNF :</p>
+         <select name='rnf'>
+           <option value="1">Yes</option>
+           <option value="0">No</option>
+        </select>
+
+       <br> <br>
+
+       <input type="submit" value="Predict">
+
+    </form>
+
+    <h2 style="text-align: center;">{{chance}}</h2>
+    
+</body>
+</html>
