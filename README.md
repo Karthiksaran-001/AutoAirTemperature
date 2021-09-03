@@ -28,9 +28,7 @@ This project is For Regression :
 1. Helps To Predict the AirTemperature Based on certain Criteria
 
   
-## Screenshots
 
-![App Screenshot]('http://airtemperature-env.eba-ubqy3qza.us-east-1.elasticbeanstalk.com/predict')
 
 
   
