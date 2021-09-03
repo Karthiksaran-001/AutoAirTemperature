@@ -82,5 +82,8 @@ with code pipeline
 
 - Deploy on AWS ElasticBeanStalk
 
+## Sample webApp : 
+ (http://airtemperature-env.eba-ubqy3qza.us-east-1.elasticbeanstalk.com/)
+
 
   
